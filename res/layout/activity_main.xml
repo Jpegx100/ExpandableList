@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/l"
+    tools:context="com.example.expandablelist.MainActivity" >
+    
+    <TextView 
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Pai"
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText 
+        	android:layout_width="270dip"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/edtPai"/>
+    	<ImageView
+        	android:id="@+id/button1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Filho"
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText 
+        android:layout_width="270dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtFilho"/>
+    <ImageView
+        	android:id="@+id/button2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ExpandableListView 
+    	android:id="@+id/expListView"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"   
+    />
+
+</LinearLayout>
